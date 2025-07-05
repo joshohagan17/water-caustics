@@ -1,0 +1,3 @@
+- Reuse the previous frames caustic data (e.g. ray traces) to improve performance?
+- Hanan's idea of warping instead of cascades.
+- Find a way to cull overlapping PDS sprites?
