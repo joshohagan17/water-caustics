@@ -1,0 +1,240 @@
+{
+  "main": {
+    "id": "b120c046d2a43d6a",
+    "type": "split",
+    "children": [
+      {
+        "id": "ab006644f531cccf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "50449e8799b4f28e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Resources/Health/physical/Sleep/Sleep.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Sleep"
+            }
+          },
+          {
+            "id": "cde5b16bfb355b22",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Projects/🏡 Daily home schedule/🏡 Daily home schedule.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "🏡 Daily home schedule"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4eb9fde88482d7a6",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "822c6d99e1fbf813",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical",
+            "autoReveal": false
+          },
+          "icon": "lucide-folder-closed",
+          "title": "Files"
+        }
+      },
+      {
+        "id": "11287f308a937a53",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "what to do next",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": true,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          },
+          "icon": "lucide-search",
+          "title": "Search"
+        }
+      },
+      {
+        "id": "8210914a89307813",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          },
+          "icon": "lucide-tags",
+          "title": "Tags"
+        }
+      },
+      {
+        "id": "da333c4af23d12f4",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {},
+          "icon": "lucide-bookmark",
+          "title": "Bookmarks"
+        }
+      },
+      {
+        "id": "f075e499c5d2ed62",
+        "type": "leaf",
+        "state": {
+          "type": "all-properties",
+          "state": {
+            "sortOrder": "frequency",
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-archive",
+          "title": "All properties"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "8abd4c90ba116f2a",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "2c68d026224a066c",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "Projects/🏡 Daily home schedule/🏡 Daily home schedule.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-coming-in",
+          "title": "Backlinks"
+        }
+      },
+      {
+        "id": "7a058e1f628549c3",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-going-out",
+          "title": "Outgoing links"
+        }
+      },
+      {
+        "id": "32712cd4ec66f4f4",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {},
+          "icon": "lucide-list",
+          "title": "Outline"
+        }
+      },
+      {
+        "id": "73c19cf90b264a38",
+        "type": "leaf",
+        "state": {
+          "type": "calendar",
+          "state": {},
+          "icon": "calendar-with-checkmark",
+          "title": "Calendar"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-git:Open Git source control": false,
+      "periodic-notes:Open today": false
+    }
+  },
+  "active": "cde5b16bfb355b22",
+  "lastOpenFiles": [
+    "Resources/misc/Journaled burnout 14-06-2025.md",
+    "Resources/misc/Should I spend the 5 mins making my own sandwhich.md",
+    "Resources/Work/Technical/KSA/Light attenuation formulae.md",
+    "Resources/misc/Food (fruit) decisions at work.md",
+    "Resources/Work/Technical/Untitled.md",
+    "Resources/misc/Pay attention or work during KSA steering.md",
+    "Resources/misc/Hours used in each day.md",
+    "Resources/misc/Napping in the morning after waking up.md",
+    "Resources/misc/Juice that is fine for IBS.md",
+    "Resources/misc/Extra clean teeth count.md",
+    "Resources/misc/Later journaling items for progress tracking.md",
+    "Resources/Health/mental/soul/How to connect to my soul/How to connect to my soul.md",
+    "Resources/misc/psyche and life values.md",
+    "Resources/misc/Thoughts on working alone vs working with people.md",
+    "Resources/misc/A bag of Heller's sausages are the cheapest and healthiest for protein.md",
+    "Resources/misc/Questions to ask Mum.md",
+    "Resources/misc/Measurements.md",
+    "Resources/misc/Guide to Careers.PDF",
+    "Resources/misc/Fruit flies.md",
+    "Resources/misc/Push hard mentally and take breaks or push at a steady rate.md",
+    "Resources/misc/Todo list after more mental toughness.md",
+    "Resources/misc/Do walking meditation or not.md",
+    "Resources/misc/Improve focus - James Clear.md",
+    "Resources/misc/Let Your Values Drive Your Choices - James Clear'.md",
+    "Resources/misc/Hang out with workmates outside of work right now.md",
+    "Resources/misc/Personal values research studies - James Clear.md",
+    "Resources/misc/Time assets vs time debts.md",
+    "Resources/Health/mental/soul/Choosing a spiritual path",
+    "Resources/Health/mental/soul/Dream work",
+    "Resources/Health/mental/soul/Shadow work",
+    "Resources/Work/Technical/Codex notes",
+    "Resources/Work/Technical/KSA/IBL",
+    "Resources/Work/Technical/KSA",
+    "Resources/misc/Mum and Dad retirement",
+    "Projects/Record weight lifting pbs (weights)",
+    "Resources/Work/Technical/Vulkan examples/Converter/Codex AI",
+    "Projects/🏢 Daily work schedule/attachments/Screenshot 2025-06-10 172117.png",
+    "Projects/🏢 Daily work schedule/attachments/Pasted image 20250610172505.png",
+    "Projects/🏢 Daily work schedule/attachments/Pasted image 20250610171945.png",
+    "Projects/🏢 Daily work schedule/attachments/Pasted image 20250610172444.png",
+    "Projects/🏢 Daily work schedule/attachments/Pasted image 20250610173700.png",
+    "Resources/Work/Misc/Lego helicopter meme/attachments/Pasted image 20250526172334.png",
+    "Resources/Work/Misc/Lego helicopter meme/attachments/Pasted image 20250526172343.png",
+    "Resources/Work/Misc/Lego helicopter meme/attachments/Screenshot 2025-05-26 171804.png",
+    "Resources/Work/Misc/Lego helicopter meme/attachments/Screenshot 2025-05-05 122442.png",
+    "Resources/Work/Misc/Lego helicopter meme/attachments/Pasted image 20250505123538.png"
+  ]
+}

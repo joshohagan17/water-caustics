@@ -1,0 +1,18 @@
+{
+  "defaultViewMode": "source",
+  "propertiesInDocument": "hidden",
+  "vimMode": false,
+  "attachmentFolderPath": "./attachments",
+  "showInlineTitle": false,
+  "newFileLocation": "current",
+  "mobilePullAction": "",
+  "alwaysUpdateLinks": true,
+  "promptDelete": false,
+  "pdfExportSettings": {
+    "includeName": false,
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  }
+}
