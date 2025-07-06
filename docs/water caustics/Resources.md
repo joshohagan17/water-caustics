@@ -2,6 +2,7 @@
 - Start with the ray tracing gems chapter as it has the most details and is game engine agnostic.
 - Look at the alternative NVidia blog if I need more understanding of the details.
 ## Real-time ray tracing of caustics (Ray tracing gems 2)
+![[Pasted image 20250707072452.png]]
 - Book chapter
 	- Ray-guided water caustics (page 486)
 - NVidia video presentation
