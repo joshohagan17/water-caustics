@@ -32,7 +32,7 @@
 #include "imgui_style.h"
 
 #include "hello_vulkan.h"
-#include "imgui/imgui_camera_widget.h"
+#include "camera/imgui_camera_widget_wc.h"
 #include "nvh/cameramanipulator.hpp"
 #include "nvh/fileoperations.hpp"
 #include "nvpsystem.hpp"
