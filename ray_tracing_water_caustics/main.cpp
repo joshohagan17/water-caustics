@@ -49,7 +49,6 @@ std::vector<std::string> defaultSearchPaths;
 
 // UI settings
 const float _maxDirectionalLightIntensity = 3;
-const float _maxPointLightIntensity       = 150;
 
 // GLFW Callback functions
 static void onErrorCallback(int error, const char* description)
@@ -63,22 +62,10 @@ void renderUI(HelloVulkan& helloVk)
   ImGuiH::CameraWidget();
   if(ImGui::CollapsingHeader("Light"))
   {
-    float maxIntensity = helloVk.m_pcRaster.lightType ? _maxDirectionalLightIntensity : _maxPointLightIntensity;
-    if(ImGui::RadioButton("Point", &helloVk.m_pcRaster.lightType, 0))
-    {
-      // Reset the light intensity to a default value
-      helloVk.m_pcRaster.lightIntensity = 100;
-    }
-
-    ImGui::SameLine();
-    if(ImGui::RadioButton("Directional", &helloVk.m_pcRaster.lightType, 1))
-    {
-      // Reset the light intensity to a default value
-      helloVk.m_pcRaster.lightIntensity = 2;
-    }
+    ImGui::RadioButton("Directional", &helloVk.m_pcRaster.lightType, 1);
 
     ImGui::SliderFloat3("Position", &helloVk.m_pcRaster.lightPosition.x, -20.f, 20.f);
-    ImGui::SliderFloat("Intensity", &helloVk.m_pcRaster.lightIntensity, 0.f, maxIntensity);
+    ImGui::SliderFloat("Intensity", &helloVk.m_pcRaster.lightIntensity, 0.f, _maxDirectionalLightIntensity);
   }
 }
 
