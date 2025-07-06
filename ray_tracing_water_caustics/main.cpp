@@ -47,6 +47,9 @@
 // Default search path for shaders
 std::vector<std::string> defaultSearchPaths;
 
+// UI settings
+const float _maxDirectionalLightIntensity = 3;
+const float _maxPointLightIntensity = 150;
 
 // GLFW Callback functions
 static void onErrorCallback(int error, const char* description)
@@ -60,12 +63,22 @@ void renderUI(HelloVulkan& helloVk)
   ImGuiH::CameraWidget();
   if(ImGui::CollapsingHeader("Light"))
   {
-    ImGui::RadioButton("Point", &helloVk.m_pcRaster.lightType, 0);
+    float maxIntensity = helloVk.m_pcRaster.lightType ? _maxDirectionalLightIntensity : _maxPointLightIntensity;
+    if(ImGui::RadioButton("Point", &helloVk.m_pcRaster.lightType, 0))
+    {
+      // Reset the light intensity to a default value
+      helloVk.m_pcRaster.lightIntensity = 100;
+    }
+
     ImGui::SameLine();
-    ImGui::RadioButton("Infinite", &helloVk.m_pcRaster.lightType, 1);
+    if(ImGui::RadioButton("Directional", &helloVk.m_pcRaster.lightType, 1))
+    {
+      // Reset the light intensity to a default value
+      helloVk.m_pcRaster.lightIntensity = 2;
+    }
 
     ImGui::SliderFloat3("Position", &helloVk.m_pcRaster.lightPosition.x, -20.f, 20.f);
-    ImGui::SliderFloat("Intensity", &helloVk.m_pcRaster.lightIntensity, 0.f, 150.f);
+    ImGui::SliderFloat("Intensity", &helloVk.m_pcRaster.lightIntensity, 0.f, maxIntensity);
   }
 }
 
@@ -210,9 +223,9 @@ int main(int argc, char** argv)
     {
       ImGuiH::Panel::Begin();
 
-      renderUI(helloVk);
       ImGui::Text("Application average %.3f ms/frame (%.1f FPS)", 1000.0f / ImGui::GetIO().Framerate, ImGui::GetIO().Framerate);
-      ImGuiH::Control::Info("", "", "(F10) Toggle Pane", ImGuiH::Control::Flags::Disabled);
+      renderUI(helloVk);
+
       ImGuiH::Panel::End();
     }
 
