@@ -91,12 +91,7 @@ int main(int argc, char** argv)
     return 1;
   }
   glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
-  GLFWwindow* window = glfwCreateWindow(SAMPLE_WIDTH, SAMPLE_HEIGHT, PROJECT_NAME, nullptr, nullptr);
-
-  std::string title;
-  fmt::format("Water caustics - {:.0f} FPS", ImGui::GetIO().Framerate);
-
-  glfwSetWindowTitle(window, title.c_str());
+  GLFWwindow* window = glfwCreateWindow(SAMPLE_WIDTH, SAMPLE_HEIGHT, "Water caustics", nullptr, nullptr);
 
   // Setup camera
   CameraManip.setWindowSize(SAMPLE_WIDTH, SAMPLE_HEIGHT);
@@ -193,6 +188,10 @@ int main(int argc, char** argv)
 
   helloVk.setupGlfwCallbacks(window);
   ImGui_ImplGlfw_InitForVulkan(window, true);
+
+  // Set the title
+  std::string title = "Water caustics";
+  glfwSetWindowTitle(window, title.c_str());
 
   // Override the default imgui style for samples
   SetupImGuiStyle();
