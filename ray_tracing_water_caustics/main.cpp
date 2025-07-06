@@ -183,8 +183,7 @@ int main(int argc, char** argv)
   helloVk.updatePostDescriptorSet();
 
 
-  glm::vec4 clearColor   = glm::vec4(1, 1, 1, 1.00f);
-  bool      useRaytracer = true;
+  glm::vec4 clearColor = glm::vec4(0, 0, 0, 1);
 
 
   helloVk.setupGlfwCallbacks(window);
@@ -206,8 +205,6 @@ int main(int argc, char** argv)
     if(helloVk.showGui())
     {
       ImGuiH::Panel::Begin();
-      ImGui::ColorEdit3("Clear color", reinterpret_cast<float*>(&clearColor));
-      ImGui::Checkbox("Ray Tracer mode", &useRaytracer);  // Switch between raster and ray tracing
 
       renderUI(helloVk);
       ImGui::Text("Application average %.3f ms/frame (%.1f FPS)", 1000.0f / ImGui::GetIO().Framerate, ImGui::GetIO().Framerate);
@@ -244,16 +241,7 @@ int main(int argc, char** argv)
       offscreenRenderPassBeginInfo.renderArea      = {{0, 0}, helloVk.getSize()};
 
       // Rendering Scene
-      if(useRaytracer)
-      {
-        helloVk.raytrace(cmdBuf, clearColor);
-      }
-      else
-      {
-        vkCmdBeginRenderPass(cmdBuf, &offscreenRenderPassBeginInfo, VK_SUBPASS_CONTENTS_INLINE);
-        helloVk.rasterize(cmdBuf);
-        vkCmdEndRenderPass(cmdBuf);
-      }
+      helloVk.raytrace(cmdBuf, clearColor);
     }
 
     // 2nd rendering pass: tone mapper, UI
