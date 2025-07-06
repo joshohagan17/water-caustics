@@ -78,7 +78,7 @@ struct PushConstantRaster
   vec3  lightPosition;
   uint  objIndex;
   float lightIntensity;
-  int   lightType;
+  int   lightType = 1;
 };
 
 
