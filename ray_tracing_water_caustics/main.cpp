@@ -49,7 +49,7 @@ std::vector<std::string> defaultSearchPaths;
 
 // UI settings
 const float _maxDirectionalLightIntensity = 3;
-const float _maxPointLightIntensity = 150;
+const float _maxPointLightIntensity       = 150;
 
 // GLFW Callback functions
 static void onErrorCallback(int error, const char* description)
@@ -175,7 +175,7 @@ int main(int argc, char** argv)
 
   // Creation of the example
   helloVk.loadModel(nvh::findFile("media/scenes/Medieval_building.obj", defaultSearchPaths, true));
-  helloVk.loadModel(nvh::findFile("media/scenes/plane.obj", defaultSearchPaths, true));
+  helloVk.loadModel(nvh::findFile("media/scenes/water-caustics/sand_plane.obj", defaultSearchPaths, true));
 
   helloVk.createOffscreenRender();
   helloVk.createDescriptorSetLayout();
