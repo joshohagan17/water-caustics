@@ -12,7 +12,7 @@
 #include "json.hpp"
 
 #include "imgui.h"
-#include "imgui/imgui_camera_widget_wc.h"
+#include "imgui_camera_widget_wc.h"
 #include "imgui_helper.h"
 #include "nvh/cameramanipulator.hpp"
 #include "nvh/misc.hpp"
