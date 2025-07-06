@@ -197,7 +197,7 @@ int main(int argc, char** argv)
   helloVk.updatePostDescriptorSet();
 
 
-  glm::vec4 clearColor = glm::vec4(0, 0, 0, 1);
+  glm::vec4 clearColor = glm::vec4(1, 1, 1, 1);
 
 
   helloVk.setupGlfwCallbacks(window);
