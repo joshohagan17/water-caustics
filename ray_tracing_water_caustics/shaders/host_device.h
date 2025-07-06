@@ -77,8 +77,8 @@ struct PushConstantRaster
   mat4  modelMatrix;  // matrix of the instance
   vec3  lightPosition;
   uint  objIndex;
-  float lightIntensity = 1;
-  int   lightType      = 1;
+  float lightIntensity;
+  int   lightType;
 };
 
 
@@ -87,8 +87,8 @@ struct PushConstantRay
 {
   vec4  clearColor;
   vec3  lightPosition;
-  float lightIntensity = 1;
-  int   lightType      = 1;
+  float lightIntensity;
+  int   lightType;
 };
 
 struct Vertex  // See ObjLoader, copy of VertexObj, could be compressed for device

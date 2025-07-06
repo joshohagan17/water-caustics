@@ -75,8 +75,8 @@ public:
       {1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1},  // Identity matrix
       {10.f, 15.f, 8.f},                                 // light position
       0,                                                 // instance Id
-      100.f,                                             // light intensity
-      0                                                  // light type
+      1.f,                                               // light intensity
+      1                                                  // light type
   };
 
   // Array of objects and instances in the scene
