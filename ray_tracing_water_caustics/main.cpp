@@ -29,6 +29,7 @@
 #include "backends/imgui_impl_vulkan.h"
 #include "imgui.h"
 #include "imgui/imgui_helper.h"
+#include "imgui_style.h"
 
 #include "hello_vulkan.h"
 #include "imgui/imgui_camera_widget.h"
@@ -188,6 +189,9 @@ int main(int argc, char** argv)
 
   helloVk.setupGlfwCallbacks(window);
   ImGui_ImplGlfw_InitForVulkan(window, true);
+
+  // Override the default imgui style for samples
+  SetupImGuiStyle();
 
   // Main loop
   while(!glfwWindowShouldClose(window))
