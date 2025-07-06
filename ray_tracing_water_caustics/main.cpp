@@ -93,6 +93,10 @@ int main(int argc, char** argv)
   glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
   GLFWwindow* window = glfwCreateWindow(SAMPLE_WIDTH, SAMPLE_HEIGHT, PROJECT_NAME, nullptr, nullptr);
 
+  std::string title;
+  fmt::format("Water caustics - {:.0f} FPS", ImGui::GetIO().Framerate);
+
+  glfwSetWindowTitle(window, title.c_str());
 
   // Setup camera
   CameraManip.setWindowSize(SAMPLE_WIDTH, SAMPLE_HEIGHT);
@@ -210,7 +214,7 @@ int main(int argc, char** argv)
     {
       ImGuiH::Panel::Begin();
 
-      ImGui::Text("Application average %.3f ms/frame (%.1f FPS)", 1000.0f / ImGui::GetIO().Framerate, ImGui::GetIO().Framerate);
+      ImGui::Text("Frame time: %.3f ms (%.1f FPS)", 1000.0f / ImGui::GetIO().Framerate, ImGui::GetIO().Framerate);
       renderUI(helloVk);
 
       ImGuiH::Panel::End();
