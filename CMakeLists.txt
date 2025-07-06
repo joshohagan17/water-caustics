@@ -4,30 +4,30 @@ project(vk_raytracing_tutorial)
 #--------------------------------------------------------------------------------------------------
 # look for nvpro_core 1) as a sub-folder 2) at some other locations
 # this cannot be put anywhere else since we still didn't find setup.cmake yet
-if(NOT BASE_DIRECTORY)
+if (NOT BASE_DIRECTORY)
 
-  find_path(BASE_DIRECTORY
-    NAMES nvpro_core/cmake/setup.cmake
-    PATHS ${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_CURRENT_SOURCE_DIR}/.. ${CMAKE_CURRENT_SOURCE_DIR}/../.. 
-    REQUIRED
-    DOC "Directory containing nvpro_core"
+    find_path(BASE_DIRECTORY
+            NAMES nvpro_core/cmake/setup.cmake
+            PATHS ${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_CURRENT_SOURCE_DIR}/.. ${CMAKE_CURRENT_SOURCE_DIR}/../..
+            REQUIRED
+            DOC "Directory containing nvpro_core"
     )
-endif()
+endif ()
 
 ## Various functions and macros REQUIRED
-if(EXISTS ${BASE_DIRECTORY}/nvpro_core/cmake/setup.cmake)
-  include(${BASE_DIRECTORY}/nvpro_core/cmake/setup.cmake)
-  include(${BASE_DIRECTORY}/nvpro_core/cmake/utilities.cmake)
-else()
-  message(FATAL_ERROR "could not find base directory, please set BASE_DIRECTORY to folder containing nvpro_core")
-endif()
+if (EXISTS ${BASE_DIRECTORY}/nvpro_core/cmake/setup.cmake)
+    include(${BASE_DIRECTORY}/nvpro_core/cmake/setup.cmake)
+    include(${BASE_DIRECTORY}/nvpro_core/cmake/utilities.cmake)
+else ()
+    message(FATAL_ERROR "could not find base directory, please set BASE_DIRECTORY to folder containing nvpro_core")
+endif ()
 
 set(TUTO_KHR_DIR ${CMAKE_CURRENT_SOURCE_DIR})
 
-if(MSVC)
+if (MSVC)
     add_definitions(/wd26812)  # 'enum class' over 'enum'
     add_definitions(/wd26451)  # Arithmetic overflow, casting 4 byte value to 8 byte value
-endif()
+endif ()
 
 #--------------------------------------------------------------------------------------------------
 # Package shared by all projects
@@ -41,8 +41,8 @@ file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/media DESTINATION ${OUTPUT_PATH})
 
 #--------------------------------------------------------------------------------------------------
 # Sub examples
-add_subdirectory(ray_tracing__advance) 
-add_subdirectory(ray_tracing__before) 
+add_subdirectory(ray_tracing__advance)
+add_subdirectory(ray_tracing__before)
 add_subdirectory(ray_tracing__simple)
 
 add_subdirectory(ray_tracing_animation)
@@ -60,13 +60,14 @@ add_subdirectory(ray_tracing_indirect_scissor)
 add_subdirectory(ray_tracing_specialization)
 add_subdirectory(ray_tracing_advanced_compilation)
 add_subdirectory(ray_tracing_motionblur)
+add_subdirectory(ray_tracing__water_caustics)
 
 
 #--------------------------------------------------------------------------------------------------
 # Install - copying the media directory
-install(DIRECTORY "media" 
-        CONFIGURATIONS Release 
+install(DIRECTORY "media"
+        CONFIGURATIONS Release
         DESTINATION "bin_${ARCH}")
-install(DIRECTORY "media" 
-        CONFIGURATIONS Debug 
+install(DIRECTORY "media"
+        CONFIGURATIONS Debug
         DESTINATION "bin_${ARCH}_debug")
