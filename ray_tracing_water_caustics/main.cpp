@@ -59,7 +59,6 @@ static void onErrorCallback(int error, const char* description)
 // Extra UI
 void renderUI(HelloVulkan& helloVk)
 {
-  ImGuiH::CameraWidget();
   if(ImGui::CollapsingHeader("Light"))
   {
     ImGui::RadioButton("Directional", &helloVk.m_pcRaster.lightType, 1);
@@ -67,6 +66,8 @@ void renderUI(HelloVulkan& helloVk)
     ImGui::SliderFloat3("Position", &helloVk.m_pcRaster.lightPosition.x, -20.f, 20.f);
     ImGui::SliderFloat("Intensity", &helloVk.m_pcRaster.lightIntensity, 0.f, _maxDirectionalLightIntensity);
   }
+
+  ImGuiH::CameraWidget();
 }
 
 //////////////////////////////////////////////////////////////////////////
