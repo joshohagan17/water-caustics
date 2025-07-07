@@ -36,7 +36,7 @@ https://www.sciencedirect.com/science/article/pii/S0097849321001230
 This paper doesn't seem to do much different to the ray-tracing gems chapter.
 ## Hybrid caustics, screen space and ray tracing - WANG 2025, thesis
 chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://kth.diva-portal.org/smash/get/diva2:1948920/FULLTEXT01.pdf
-Does a hybrid approach between screen space and ray-traced, but I want to do just ray-traced for my hobby project.
+Does a hybrid approach between screen space and ray-traced, but I want to do just ray-traced for caustics.
 ## Approximating caustics in a traditional renderer - Renou 2020
 https://medium.com/@martinRenou/real-time-rendering-of-water-caustics-59cda1d74aa
 Doesn't use ray-tracing.
