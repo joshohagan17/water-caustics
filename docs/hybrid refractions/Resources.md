@@ -14,7 +14,20 @@ chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://link.springer.com/co
 ## [Adventures in Hybrid Rendering](https://diharaw.github.io/post/adventures_in_hybrid_rendering/) - Wijetunga 2021
 https://diharaw.github.io/post/adventures_in_hybrid_rendering/
 - Has a lot about sampling and filtering as well.
+# Code
+## NVidia Falcor
+https://github.com/NVIDIAGameWorks/Falcor
+- Real-time rendering framework supporting ray-tracing
+- Has 500 forks
+- Hello DXR sample
+	- https://github.com/NVIDIAGameWorks/Falcor/tree/master/Source/Samples/HelloDXR
+## NVidia Donut
+https://github.com/NVIDIA-RTX/Donut
+- Real-time rendering framework with ray-tracing support
+## NVidia RTXPT
+https://github.com/NVIDIA-RTX/RTXPT
+- A code sample derived from Falcor
 ## AMD hybrid reflections (FidelityFX code)
 https://github.com/GPUOpen-LibrariesAndSDKs/FidelityFX-SDK/blob/main/docs/samples/hybrid-reflections.md
 ## AMD stochastic screen space reflections (SSSR) (FidelityFX code)
-https://github.com/GPUOpen-LibrariesAndSDKs/FidelityFX-SDK/blob/main/docs/samples/stochastic-screen-space-reflections.md
+https://github.com/GPUOpen-LibrariesAndSDKs/FidelityFX-SDK/blob/main/docs/samples/stochastic-screen-space-refle
