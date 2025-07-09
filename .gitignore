@@ -3,3 +3,7 @@
 /out/build/x64-Debug
 /.vs
 **/.idea
+
+# Obsidian
+.obsidian/plugins/obsidian-git/data.json
+.obsidian/workspace.json
