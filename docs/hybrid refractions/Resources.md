@@ -15,18 +15,29 @@ chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://link.springer.com/co
 https://diharaw.github.io/post/adventures_in_hybrid_rendering/
 - Has a lot about sampling and filtering as well.
 # Code
+Picking a popular framework doesn't matter much as any of these frameworks are very easy to quickly learn and start writing code in. Just use the code that suits you best to make your hobby project.
+## Decision
+1. Try out Falcor python.
+2. If that doesn't work, try out AMD hybrid reflections sample.
 ## NVidia Falcor
 https://github.com/NVIDIAGameWorks/Falcor
 - Real-time rendering framework supporting ray-tracing
 - Has 500 forks
+- Has Python for quick prototyping!
+- Actively maintained through github commits
 - Hello DXR sample
 	- https://github.com/NVIDIAGameWorks/Falcor/tree/master/Source/Samples/HelloDXR
+- Setup guide (written by a thirdparty)
+	- https://bipul-mohanto.github.io/posts/2024/08/NVIDIAFalcorForBiggnersSeries/
 ## NVidia Donut
 https://github.com/NVIDIA-RTX/Donut
 - Real-time rendering framework with ray-tracing support
+- Actively maintained through github commits
+- I can't find any videos or tutorials on it, making me think that it's not as popular as Falcor.
 ## NVidia RTXPT
 https://github.com/NVIDIA-RTX/RTXPT
 - A code sample derived from Falcor
+- The sample is all in one file unfortunately, which makes it a bit harder to use.
 ## AMD hybrid reflections (FidelityFX code)
 https://github.com/GPUOpen-LibrariesAndSDKs/FidelityFX-SDK/blob/main/docs/samples/hybrid-reflections.md
 ## AMD stochastic screen space reflections (SSSR) (FidelityFX code)
