@@ -16,7 +16,7 @@ https://diharaw.github.io/post/adventures_in_hybrid_rendering/
 - Has a lot about sampling and filtering as well.
 # Code
 Picking a popular framework doesn't matter much as any of these frameworks are very easy to quickly learn and start writing code in. Just use the code that suits you best to make your hobby project.
-## Decision
+## Final decision
 1. Try out Falcor python.
 2. If that doesn't work, try out AMD hybrid reflections sample.
 ## NVidia Falcor
