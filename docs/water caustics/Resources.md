@@ -31,7 +31,7 @@ Gives a good overview of what caustics are in rendering.
 - Might be too difficult for me to implement for all of the details as I don't have access to the source code.
 - Although they implemented their technique in the Unity HDRP, I feel that the ray-tracing gems technique applies a lot more to games and integrating caustics into an existing game (it is NVidia as well!)
 - I can still grab useful parts of this paper later if I want to.
-## Kougianos, Moustakas 2025 paper, based on Gruen
+## Kougianos, Moustakas 2021 paper, based on Gruen
 https://www.sciencedirect.com/science/article/pii/S0097849321001230
 This paper doesn't seem to do much different to the ray-tracing gems chapter.
 ## Hybrid caustics, screen space and ray tracing - WANG 2025, thesis
